@@ -6,9 +6,4 @@
     <RootNamespace>solid_principles.OCP</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Solution\" />
-    <Folder Include="Violation\" />
-  </ItemGroup>
-
 </Project>

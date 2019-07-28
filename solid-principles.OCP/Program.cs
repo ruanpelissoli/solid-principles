@@ -1,4 +1,6 @@
-﻿using System;
+﻿using solid_principles.OCP.Solution;
+using System;
+using System.Collections.Generic;
 
 namespace solid_principles.OCP
 {
@@ -6,7 +8,20 @@ namespace solid_principles.OCP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var baseSalary = 1500m;
+
+            var salaryCalculations = new List<CalculateSalary>
+            {
+                new CalculateTraineeSalary(),
+                new CalculateJuniorSalary(),
+                new CalculateSeniorSalary()
+            };
+
+            foreach (var salaryCalculator in salaryCalculations)
+            {
+                Console.WriteLine(salaryCalculator.Calculate(baseSalary));
+            }
+            Console.ReadLine();
         }
     }
 }
