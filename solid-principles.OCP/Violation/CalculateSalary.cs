@@ -1,16 +1,19 @@
-﻿namespace solid_principles.OCP.Violation
+﻿using System;
+
+namespace solid_principles.OCP.Violation
 {
     public class CalculateSalary
     {
         public decimal Calculate(decimal baseSalary, Level level)
         {
-            if (level == Level.Trainee)
+            switch(level)
             {
-                return baseSalary * 1.2m;
-            }
-            else
-            {
-                return baseSalary * 1.8m;
+                case Level.Trainee:
+                    return baseSalary * 1.2m;
+                case Level.Junior:
+                    return baseSalary * 1.8m;
+                default:
+                    throw new ArgumentException("Nível não encontrado.");
             }
         }
     }
