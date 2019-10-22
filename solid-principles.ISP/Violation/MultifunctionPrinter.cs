@@ -2,7 +2,7 @@
 
 namespace solid_principles.ISP.Violation
 {
-    public class MultifuncionPrinter : IPrinter
+    public class MultifunctionPrinter : IPrinter
     {
         public void Print()
         {

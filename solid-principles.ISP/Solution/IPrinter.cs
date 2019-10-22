@@ -1,6 +1,6 @@
 ﻿namespace solid_principles.ISP.Solution
 {
-    public interface IPrint
+    public interface IPrinter
     {
         void Print();
     }

@@ -2,7 +2,7 @@
 
 namespace solid_principles.ISP.Solution
 {
-    public class MultifuncionPrinter : IPrint, IScanner, ISendFax
+    public class MultifunctionPrinter : IPrinter, IScanner, ISendFax
     {
         public void Print()
         {

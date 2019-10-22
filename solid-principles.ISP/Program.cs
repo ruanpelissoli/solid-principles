@@ -6,7 +6,7 @@ namespace solid_principles.ISP
     {
         static void Main(string[] args)
         {
-            var multifuncional = new MultifuncionPrinter();
+            var multifuncional = new MultifunctionPrinter();
             multifuncional.Print();
             multifuncional.Scanner();
             multifuncional.SendFax();

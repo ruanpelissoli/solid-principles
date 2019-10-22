@@ -2,7 +2,7 @@
 
 namespace solid_principles.ISP.Solution
 {
-    public class Pinter : IPrint
+    public class Pinter : IPrinter
     {
         public void Print()
         {
