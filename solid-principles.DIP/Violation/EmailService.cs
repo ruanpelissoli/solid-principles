@@ -1,10 +1,10 @@
 ﻿using System.Net.Mail;
 
-namespace solid_principles.SRP.Solution
+namespace solid_principles.DIP.Violation
 {
     public class EmailService
     {
-        public void Enviar(string from, string to, string subject, string message)
+        public void Send(string from, string to, string subject, string message)
         {
             var mail = new MailMessage(from, to);
             var client = new SmtpClient

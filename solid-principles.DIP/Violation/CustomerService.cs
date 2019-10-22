@@ -1,4 +1,4 @@
-﻿namespace solid_principles.SRP.Solution
+﻿namespace solid_principles.DIP.Violation
 {
     public class CustomerService
     {
@@ -11,7 +11,7 @@
             repo.AddCustomer(customer);
 
             var emailService = new EmailService();
-            emailService.Enviar("empresa@empresa.com", customer.Email.Address, "Bem Vindo", "Parabéns está Cadastrado");
+            emailService.Send("empresa@empresa.com", customer.Email.Address, "Bem-vindo", "Parabéns está Cadastrado");
 
             return "Cliente cadastrado com sucesso";
         }

@@ -6,13 +6,13 @@ namespace solid_principles.ISP
     {
         static void Main(string[] args)
         {
-            var multifuncional = new Multifuncional();
-            multifuncional.Imprimir();
-            multifuncional.Digitalizar();
-            multifuncional.EnviarFax();
+            var multifuncional = new MultifuncionPrinter();
+            multifuncional.Print();
+            multifuncional.Scanner();
+            multifuncional.SendFax();
 
-            var impressoira = new Impressora();
-            impressoira.Imprimir();
+            var impressora = new Pinter();
+            impressora.Print();
         }
     }
 }

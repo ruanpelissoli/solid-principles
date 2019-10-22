@@ -1,10 +1,11 @@
-﻿using System.Net.Mail;
+using System.Net.Mail;
+using solid_principles.DIP.Solution.Interfaces;
 
-namespace solid_principles.SRP.Solution
+namespace solid_principles.DIP.Solution
 {
-    public class EmailService
+    public class EmailService : IEmailService
     {
-        public void Enviar(string from, string to, string subject, string message)
+        public void Send(string from, string to, string subject, string message)
         {
             var mail = new MailMessage(from, to);
             var client = new SmtpClient
@@ -18,8 +19,6 @@ namespace solid_principles.SRP.Solution
             mail.Subject = subject;
             mail.Body = message;
             client.Send(mail);
-
-            System.Console.WriteLine(message);
         }
     }
 }

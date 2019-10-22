@@ -1,7 +1,7 @@
 ﻿namespace solid_principles.ISP.Solution
 {
-    public interface IImprimir
+    public interface IPrint
     {
-        void Imprimir();
+        void Print();
     }
 }

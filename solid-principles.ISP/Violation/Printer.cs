@@ -2,19 +2,19 @@
 
 namespace solid_principles.ISP.Violation
 {
-    public class Impressora : IImpressora
+    public class Printer : IPrinter
     {
-        public void Imprimir()
+        public void Print()
         {
-            Console.WriteLine("Imprimir");
+            Console.WriteLine("Print");
         }
 
-        public void Digitalizar()
+        public void Scanner()
         {
             throw new NotImplementedException();
         }
 
-        public void EnviarFax()
+        public void SendFax()
         {
             throw new NotImplementedException();
         }
